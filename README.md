@@ -4,5 +4,7 @@ These are my projects from the freeCodeCamp online web development course.
 
 https://www.freecodecamp.org/joao-neves95
 
+<nbsp>
+
 - Random Quote Machine App:
-  * https://github.com/joao-neves95/freeCodeCamp/tree/master/Random_Quote_App
+  . https://github.com/joao-neves95/freeCodeCamp/tree/master/Random_Quote_App
