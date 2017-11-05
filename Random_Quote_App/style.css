@@ -1,0 +1,24 @@
+body {
+  min-height: 100vh
+}
+
+html {
+  min-height: 100vh;
+  position: relative
+}
+
+main {
+  min-height: 100%;
+  padding: 0px;
+  position: absolute;
+  overflow: hidden
+}
+
+.center {
+  margin: auto
+}
+
+#card-styles {
+  margin-top: 25vh;
+  max-width: 30em;
+}

@@ -1,0 +1,78 @@
+<!-- 
+
+  TODO:
+    - Add social integration (Twitter);
+    - Add a footer with my info.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="application-name" content="Random Quote Generator App">
+  <!-- Tells Google not to provide a translation for this page -->
+  <meta name="google" content="notranslate">
+  <title>Random Quote Generator App</title>
+  <!-- Bootstrap 4 CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha256-QUyqZrt5vIjBumoqQV0jM8CgGqscFfdGhN+nVCqX0vc=" crossorigin="anonymous">
+  <!-- Font Awesome CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <main class="container-fluid" id="#main">
+    <div class="row">
+      <div class="col-md-12">
+        <section class="card center mt-25vh" id="card-styles">
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+              <h3 class="card-title text-center" id="quote-content">
+                Good design is finding a solution to a problem. Great design is finding the simplest solution to the same problem.
+              </h3>
+              <i class="fa fa-quote-right float-right" aria-hidden="true"></i>
+              <cite class="blockquote-footer card-text mt-5 text-right" id="quote-title">Nicholas Petersen</cite>
+            </blockquote>
+            <button class="btn btn-primary" type="button">
+              <i class="fa fa-lg fa-twitter" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-primary float-right" type="button" id="get-new-quote">New Quote</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- JQuery JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+  <!-- Popper JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"
+    integrity="sha256-/GXjBGBWRx8/y1Be190w3hrUOFXNs9qPhthi0tbNnG8="
+    crossorigin="anonymous">
+  </script>
+  <!-- Bootstrap 4 JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha256-GIa8Vh3sfESnVB2CN3rYGkD/MklvMq0lmITweQxE1qU="
+    crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
