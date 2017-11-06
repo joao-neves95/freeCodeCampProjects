@@ -3,7 +3,7 @@ $(document).ready(function () {
   $('#get-new-quote').on('click', function () {
     // Quotes On Design API call:
     $.ajax({
-      url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=',
+      url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=',
       success: function (json) {
         var post = json.shift(); // The data is an array of posts. Grab the first one.
         $('#quote-content').html(post.content)
