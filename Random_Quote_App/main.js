@@ -2,14 +2,28 @@ $(document).ready(function () {
   // NEW QUOTE Button:
   $('#get-new-quote').on('click', function () {
     // Quotes On Design API:
-    $.ajax( {
+    $.ajax({
       url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=',
       success: function (json) {
         var post = json.shift(); // The data is an array of posts. Grab the first one.
         $('#quote-content').html(post.content)
         $('#quote-title').html(post.title)
 
-        // If the Source is unavailable:
+        // Reset the Twitter Share Button Link:
+        document.getElementById('twitter-share-btn').attributes['href'].value = 'https://twitter.com/intent/tweet?hashtags=quotes,quote,shivayl&text='
+
+        // Add the quote content to the Twitter Share Button Link:
+        let splitedContent = post.content.split(' ')
+
+          // Remove the paragraph tags from the begininng and end of the quote that comes from the API:
+        splitedContent[0] = splitedContent[0].substring(3)
+        let lastSplitedContent = splitedContent[splitedContent.length - 1]
+        splitedContent[splitedContent.length - 1] = lastSplitedContent.substring(0, lastSplitedContent.length - 5)
+        let joinedContent = splitedContent.join('%20')
+
+        document.getElementById('twitter-share-btn').attributes['href'].value += joinedContent
+
+        // If the API Source is unavailable:
         if (typeof post.custom_meta === 'undefined' && typeof post.custom_meta.Source === 'undefined') {
           $('#quote-content').html('The API is unavailable')
           $('#quote-title').html('')
@@ -21,7 +35,6 @@ $(document).ready(function () {
     // Change Theme Color:
     $('body').removeClass().addClass(function () {
       let keys = Object.keys(themes)
-      let values = Object.values(themes)
       // Get a random key from themes:
       let randomTheme = themes[keys[Math.floor(Math.random() * keys.length)]]
       return randomTheme.BG + ' ' + randomTheme.text
@@ -47,4 +60,3 @@ $(document).ready(function () {
   }
   // End of Themes.
 })
-
