@@ -2,7 +2,21 @@
 
 &nbsp;
 
-##### *v0.1.1 - (Nov 06, 2017)
+##### *v0.1.2 - (Nov 06, 2017)
+- **```index.html```**:
+
+  . Linked Animate.css;
+
+  . Added some animations;
+
+  . Minor ```HEAD``` refactoring.
+- **```main.js```**
+
+  . Fixed Quotes On Design API link. From http to https.
+
+&nbsp;
+
+##### v0.1.1 - (Nov 06, 2017)
 - **```index.html```**:
 
   . Added a footer;
