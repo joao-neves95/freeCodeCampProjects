@@ -2,7 +2,14 @@
 
 &nbsp;
 
-##### *v0.0.2 - Alpha (Nov 05, 2017)
+##### *v0.1.0 - (Nov 06, 2017)
+- **```main.js```** & **```index.html```**:
+
+  . The Twitter Share Button is now functional (some issues when there's a special character on the quote).
+
+&nbsp;
+
+##### v0.0.2 - Alpha (Nov 05, 2017)
 - **Global:**
 
   . Updated from Pre-Alpha to Alpha. It's alive! 
