@@ -1,7 +1,6 @@
 <!-- 
 
   TODO:
-    - Add social integration (Twitter);
     - Add a footer with my info.
  -->
 
@@ -39,14 +38,20 @@
             <blockquote class="blockquote">
               <i class="fa fa-quote-left" aria-hidden="true"></i>
               <h3 class="card-title text-center" id="quote-content">
-                Good design is finding a solution to a problem. Great design is finding the simplest solution to the same problem.
+                Click <code>New Quote</code> to get a new quote.
               </h3>
               <i class="fa fa-quote-right float-right" aria-hidden="true"></i>
-              <cite class="blockquote-footer card-text mt-5 text-right" id="quote-title">Nicholas Petersen</cite>
+              <cite class="blockquote-footer card-text mt-5 text-right" id="quote-title"></cite>
             </blockquote>
-            <button class="btn btn-primary" type="button">
-              <i class="fa fa-lg fa-twitter" aria-hidden="true"></i>
-            </button>
+            <a
+              href="https://twitter.com/intent/tweet?hashtags=quotes,quote,shivayl&text="
+              id="twitter-share-btn"
+              class="btn btn-primary"
+              data-size="large"
+              type="button"
+              target="_blank">
+              <i class="fa fa-lg fa-twitter text-white" aria-hidden="true"></i>
+            </a>
             <button class="btn btn-primary float-right" type="button" id="get-new-quote">New Quote</button>
           </div>
         </section>
