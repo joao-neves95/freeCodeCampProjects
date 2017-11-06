@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // NEW QUOTE Button:
   $('#get-new-quote').on('click', function () {
-    // Quotes On Design API:
+    // Quotes On Design API call:
     $.ajax({
       url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=',
       success: function (json) {
@@ -31,6 +31,7 @@ $(document).ready(function () {
       },
       cache: false
     })
+    // End of Quotes On Design API call.
 
     // Change Theme Color:
     $('body').removeClass().addClass(function () {
