@@ -2,7 +2,25 @@
 
 &nbsp;
 
-##### *v0.1.0 - (Nov 06, 2017)
+##### *v0.1.1 - (Nov 06, 2017)
+- **```index.html```**:
+
+  . Added a footer;
+
+  . Fixed some color and sizing bugs;
+
+  . Fixed some tags;
+
+  . Minor refactoring;
+
+  . Beautified the file.
+- **```style.css```**:
+
+  . Added one Google Icon for the "Find me on the Web Section".
+
+&nbsp;
+
+##### v0.1.0 - (Nov 06, 2017)
 - **```main.js```** & **```index.html```**:
 
   . The Twitter Share Button is now functional (some issues when there's a special character on the quote).
