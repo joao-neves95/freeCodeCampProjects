@@ -7,4 +7,6 @@ https://www.freecodecamp.org/joao-neves95
 
 - Random Quote Machine App:
 
-  . https://github.com/joao-neves95/freeCodeCamp/tree/master/Random_Quote_App
+  . [CodePen.io](https://codepen.io/shivayl/full/MOexdB/)
+
+  . [Repository](https://github.com/joao-neves95/freeCodeCamp/tree/master/Random_Quote_App)
