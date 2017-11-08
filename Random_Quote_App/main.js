@@ -14,14 +14,13 @@ $(document).ready(function () {
 
         // Add the quote content to the Twitter Share Button Link:
         let splitedContent = post.content.split(' ')
-
-          // Remove the paragraph tags from the begininng and end of the quote that comes from the API:
+          // Remove the paragraph tags from the begininng and end of the quote that comes from the API, and replace all ' with ´:
         splitedContent[0] = splitedContent[0].substring(3)
         let lastSplitedContent = splitedContent[splitedContent.length - 1]
         splitedContent[splitedContent.length - 1] = lastSplitedContent.substring(0, lastSplitedContent.length - 5)
-        let joinedContent = splitedContent.join('%20')
+        let joinedContent = splitedContent.join(' ')
 
-        document.getElementById('twitter-share-btn').attributes['href'].value += joinedContent
+        document.getElementById('twitter-share-btn').href += '"' + encodeURIComponent(joinedContent) + '"'
 
         // If the API Source is unavailable:
         if (typeof post.custom_meta === 'undefined' && typeof post.custom_meta.Source === 'undefined') {
