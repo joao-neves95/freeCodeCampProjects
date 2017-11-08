@@ -2,7 +2,16 @@
 
 &nbsp;
 
-##### *v0.1.2 - (Nov 06, 2017)
+##### *v0.1.3 - (Nov 08, 2017)
+
+- **```main.js```**:
+
+  . Fixed a bug with the Twitter Link. When attaching the API contents to the Twitter Share Link, some of the quotes 
+  where stored incomplete, because of the single quotes from words like "it's". Added encodeURIComponent() built in function.
+
+&nbsp;
+
+##### v0.1.2 - (Nov 06, 2017)
 - **```index.html```**:
 
   . Linked Animate.css;
@@ -10,7 +19,7 @@
   . Added some animations;
 
   . Minor ```HEAD``` refactoring.
-- **```main.js```**
+- **```main.js```**:
 
   . Fixed Quotes On Design API link. From http to https.
 
