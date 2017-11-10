@@ -23,8 +23,7 @@ main {
   max-width: 30em;
 }
 
-/* Google Icons*/
-
+/* Google Icons */
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -44,6 +43,7 @@ main {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
+  font-feature-settings: 'liga';
   -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale;
 }
