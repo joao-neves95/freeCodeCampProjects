@@ -14,13 +14,34 @@ main {
   overflow: hidden
 }
 
+#card-styles {
+  margin-top: 25vh;
+  max-width: 30em;
+}
+
+#location {
+  font-size: 1.5rem;
+}
+
+#temp {
+  font-size: 3rem;
+}
+
+#sky {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#scale-btn {
+  margin-top: 1em;
+}
+
 .center {
   margin: auto
 }
 
-#card-styles {
-  margin-top: 25vh;
-  max-width: 30em;
+.hide {
+  visibility: hidden;
 }
 
 /* Google Icons */
