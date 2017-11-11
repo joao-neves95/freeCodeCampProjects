@@ -22,8 +22,6 @@ main {
   max-width: 30em;
 }
 
-/*#sky, #location, #temp, #change-scale*/
-
 h3, p, #find-me {
   font-family: 'Open Sans Condensed', sans-serif;
 }
