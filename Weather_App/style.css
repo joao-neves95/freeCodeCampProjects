@@ -1,22 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 body {
-  min-height: 100vh
+  min-height: 100vh;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 html {
   min-height: 100vh;
-  position: relative
+  position: relative;
 }
 
 main {
   min-height: 100%;
   padding: 0px;
   position: absolute;
-  overflow: hidden
+  overflow: hidden;
 }
 
 #card-styles {
   margin-top: 25vh;
   max-width: 30em;
+}
+
+/*#sky, #location, #temp, #change-scale*/
+
+h3, p, #find-me {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#sky {
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 #location {
@@ -25,11 +39,6 @@ main {
 
 #temp {
   font-size: 3rem;
-}
-
-#sky {
-  font-size: 2.5rem;
-  text-align: center;
 }
 
 #scale-btn {
@@ -42,6 +51,10 @@ main {
 
 .hide {
   visibility: hidden;
+}
+
+.text-black {
+  color: black;
 }
 
 /* Google Icons */
