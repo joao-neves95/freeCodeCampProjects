@@ -2,7 +2,22 @@
 
 &nbsp;
 
-## *v0.0.1.Alpha - (Nov, 2017)
+## *v0.1.0 - (Nov 11, 2017)
+
+- **```index.html```**:
+
+  . Minor fixes on sizings;
+
+  . Added some styling (color, font, sizes).
+- **```style.css```**:
+
+  . Added a Google Font ('Open Sans Condensed');
+
+  . Added some styling (color, font, sizes).
+
+&nbsp;
+
+## v0.0.1.Alpha - (Nov 10, 2017)
 
 - **```index.html```**:
 
