@@ -27,7 +27,7 @@ $(document).ready(function () {
       })
     })
   } else {
-    console.log('Geolocation Not Available')
+    $('#temp').html('Geolocation Not Available')
   }
   // Change Degree Scale Toggle Button (Celsius <-> Fahrenheit):
   function toCelsius (fahrenheit) {
