@@ -34,12 +34,12 @@
     integrity="sha256-rDWX6XrmRttWyVBePhmrpHnnZ1EPmM6WQRQl6h0h7J8=" crossorigin="anonymous" />
 </head>
 
-<body class="bg-light">
+<body class="bg-dark">
   <!-- Card Weather Showcaser -->
   <main class="container-fluid" id="main">
     <div class="row">
       <div class="col-md-12">
-        <section class="card center animated zoomInUp" id="card-styles">
+        <section class="card center bg-secondary animated zoomInUp" id="card-styles">
           <div class="card-body">
             <div class="row" id="sky-div">
               <i><img class="fa" src="" alt="" id="sky-icon"></i>
@@ -53,6 +53,7 @@
                 <h3 class="card-title" id="temp"></h3>
               </div>
             </div>
+            <!-- Change Temperature Scale Button -->
             <div class="checkbox text-right" id="scale-btn">
               <input id="change-scale" type="checkbox" data-toggle="toggle" data-on="Celsius" data-off="Fahrenheit" data-offstyle="light">
             </div>
@@ -62,34 +63,34 @@
     </div>
     <!-- End of Card Weather Showcaser -->
 
-    <footer class="row" style="margin-top: 15em; color: black;">
+    <footer class="row" style="margin-top: 18em; color: black;">
       <section class="col-md-6 animated fadeInLeftBig">
         <!-- Find me on the Web: -->
         <div class="col-md-12">
           <h3 class="title-font text-center" id="find-me">
-            <i class="material-icons" style="font-size:30px;" aria-hidden="true">language</i> Find me on the Web
+            <i class="material-icons" style="font-size: 1.5rem;" aria-hidden="true">language</i> Find me on the Web
           </h3>
         </div>
         <div class="col-md-12">
           <ul class="list-unstyled list-inline text-center mt-4 mb-5">
             <li class="list-inline-item">
               <a href="https://pt.linkedin.com/in/jo%C3%A3o-neves-1995-dg" target="_blanck">
-                <i class="fa fa-linkedin-square fa-3x text-dark" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square fa-3x text-black" aria-hidden="true"></i>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.behance.net/joao-neves25" target="_blanck">
-                <i class="fa fa-behance-square fa-3x text-dark" aria-hidden="true"></i>
+                <i class="fa fa-behance-square fa-3x text-black" aria-hidden="true"></i>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://github.com/joao-neves95" target="_blanck">
-                <i class="fa fa-github-square fa-3x text-dark" aria-hidden="true"></i>
+                <i class="fa fa-github-square fa-3x text-black" aria-hidden="true"></i>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.freecodecamp.org/joao-neves95" target="_blanck">
-                <i class="fa fa-free-code-camp fa-3x text-dark" aria-hidden="true"></i>
+                <i class="fa fa-free-code-camp fa-3x text-black" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
@@ -99,12 +100,12 @@
       <!-- Copyright -->
       <section class="col-md-6 animated fadeInRightBig">
         <div style="margin-top: 1em;">
-          <p class="text-font text-center">&copy; 2017. All Rights Reserved, João Neves.</p>
+          <p class="text-font text-center" style="font-size: 1.2rem;">&copy; 2017. All Rights Reserved, João Neves.</p>
         </div>
         <div class="col-sm-6 text-right">
           <p>
             <a href="https://github.com/joao-neves95/freeCodeCamp/tree/master/Weather_App" target="_blanck">
-              <i class="fa fa-github-square fa-lg text-dark"></i>
+              <i class="fa fa-github-square fa-lg text-black"></i>
             </a>
           </p>
         </div>
