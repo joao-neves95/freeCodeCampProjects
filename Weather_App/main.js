@@ -16,7 +16,7 @@ $(document).ready(function () {
         url: APILink,
         success: function (json) {
           $('#sky').html(json.weather[0].main)
-          $('#sky-icon').attr('src', 'http://openweathermap.org/img/w/' + json.weather[0].icon +'.png')
+          $('#sky-icon').attr('src', 'http://openweathermap.org/img/w/' + json.weather[0].icon + '.png')
           $('#sky-icon').attr('alt', json.weather[0].main)
           $('#location').html(json.name + ', ' + json.sys.country)
           // The temperature comes in Kelvin Scale (.C = .K - 273.15)
