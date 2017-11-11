@@ -10,7 +10,6 @@ $(document).ready(function () {
       usrLongitude = position.coords.longitude
 
       // API Call:
-      // Test URL: https://api.openweathermap.org/data/2.5/weather?lat=38.7018707&lon=-9.228257700000002&appid=2be16b4f9b9e0645e776071c8092b02e
       let APILink = 'https://api.openweathermap.org/data/2.5/weather?lat=' + usrLatitude + '&lon=' + usrLongitude + '&appid=2be16b4f9b9e0645e776071c8092b02e'
       $.ajax({
         url: APILink,
