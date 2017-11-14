@@ -3,6 +3,19 @@
 /* Magic CSS */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css');
 
+/* About Button */
+ul.about {
+  margin-right: 2em;
+}
+a#about-btn {
+  width: 8em;
+  text-align: center;
+}
+
+#wiki-cards-holder {
+  margin-top: 3em;
+}
+
 /* Material Design Google Icons */
 @font-face {
   font-family: 'Material Icons';
