@@ -2,7 +2,29 @@
 
 &nbsp;
 
-## *v0.0.0.2.Pre-Alpha (Nov 14, 2017)
+## *v0.0.1.Alpha (Nov 16, 2017)
+
+- ```index.html```:
+
+  . Removed the Wikipedia Cards. They are now injected with ```JavaScript```;
+
+  . Added comments.
+
+- ```main.js```:
+
+  . The ```MediaWiki API``` is now linked and fully functional;
+
+  . The (Wiki Cards) wikipedia content search results are now injected on the page with ```JavaScript```;
+
+  . Prepared the cards clickable link to wikipedia page functiuonality (propbably open an ```iFrame```)
+
+  . Refactored some animation parts in order to facilitate any changings in the future;
+
+  . Added comments.
+
+&nbsp;
+
+## v0.0.0.2.Pre-Alpha (Nov 14, 2017)
 
 - ```index.html```:
 
