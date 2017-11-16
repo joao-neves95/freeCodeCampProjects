@@ -16,6 +16,10 @@ a#about-btn {
   margin-top: 3em;
 }
 
+main a:link {
+  color: black;
+}
+
 /* Material Design Google Icons */
 @font-face {
   font-family: 'Material Icons';
