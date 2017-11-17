@@ -6,7 +6,6 @@
 */
 $('#search-form, #about-page').hide()
 $(document).ready(function () {
-
   function showSearchForm () {
     $('#search-form').slideDown()
     $('#search-btn-container').addClass('active')
