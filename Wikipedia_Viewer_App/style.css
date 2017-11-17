@@ -11,6 +11,7 @@ a#about-btn {
   width: 8em;
   text-align: center;
 }
+/* End of About Button */
 
 #wiki-cards-holder {
   margin-top: 3em;
@@ -19,6 +20,40 @@ a#about-btn {
 main a:link {
   color: black;
 }
+
+/* Wikipedia Embedded Content iFrame Pop-Up */
+#iframe-container {
+  background-color: white;
+  position: fixed;
+  top: 10%;
+  left: 2%;
+  right: 2%;
+  margin: auto;
+  padding-top: 10em;
+  text-align: center;
+  height: 85%;
+  width: 96%;
+  z-index: 99;
+}
+
+#iframe-title {
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+iframe {
+  padding-top: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  height: 100%;
+  width: 100%;
+}
+/* End of Wikipedia embedded content iFrame */
 
 /* Material Design Google Icons */
 @font-face {
