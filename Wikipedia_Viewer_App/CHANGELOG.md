@@ -2,7 +2,22 @@
 
 &nbsp;
 
-## *v0.0.1.Alpha (Nov 16, 2017)
+## *v0.0.2.Alpha (Nov 17, 2017)
+
+- ```index.html```:
+
+  . Constructed the Wikipedia Embedded Content iFrame Pop-Up (just a test. It will be injected on the DOM with JavaScript);
+
+  . Added comments.
+- ```style.css```:
+
+  . Styled the Wikipedia Embedded Content iFrame Pop-Up;
+
+  . Added comments.
+
+&nbsp;
+
+## v0.0.1.Alpha (Nov 16, 2017)
 
 - ```index.html```:
 
