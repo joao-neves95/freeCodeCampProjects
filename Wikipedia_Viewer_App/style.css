@@ -2,9 +2,20 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css");
 /* Magic CSS */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css');
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.dark-text {
+  color: #212529;
+}
 
 .btn-white {
   color: white !important;
+}
+
+#wikipedia-logo {
+  margin-top: 0.17em;
+  margin-left: 1em;
 }
 
 /* About Button */
@@ -16,6 +27,10 @@ a#about-btn {
   text-align: center;
 }
 /* End of About Button */
+
+#random-search-btn {
+  margin-right: 1em;
+}
 
 /* Main */
 #wiki-cards-holder {
@@ -83,6 +98,38 @@ iframe {
   width: 100%;
 }
 /* End of Wikipedia embedded content iFrame */
+
+/* About Page */
+#about-page {
+  background-color: #CAC8C8;
+  border-radius: 0.2em;
+  margin-top: 1em;
+  padding: 0 0 0.3em 1em;
+}
+
+#stack, #find-me, #repo {
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+div.p-about {
+  margin-left: 2.8em;
+}
+
+section#about-page a:link {
+  color: #1f9b1f;
+}
+
+div.list-inline {
+  margin-left: 3em !important;
+}
+
+div.list-inline li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 0.3em;
+}
+/* End of About Page */
 
 /* Material Design Google Icons */
 @font-face {
