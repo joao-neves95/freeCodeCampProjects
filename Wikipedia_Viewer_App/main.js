@@ -1,9 +1,3 @@
-/* API Documentation: https://www.mediawiki.org/wiki/API:Main_page & https://www.mediawiki.org/wiki/API:Search & https://www.mediawiki.org/wiki/API:Search_and_discovery
-      Query Parameters I can use:
-      prop=extracts [https://www.mediawiki.org/w/api.php?action=help&modules=query%2Bextracts]
-      prop=pageviews [https://www.mediawiki.org/w/api.php?action=help&modules=query%2Bpageviews]
-      list=search [https://www.mediawiki.org/w/api.php?action=help&modules=query%2Bsearch]
-*/
 $('#search-form, #about-page').hide()
 $(document).ready(function () {
   function showSearchForm () {
@@ -20,6 +14,7 @@ $(document).ready(function () {
     $('#about-page').slideDown()
     $('#about-btn-container').addClass('active')
   }
+
   function hideAboutPage () {
     $('#about-page').hide()
     $('#about-btn-container').removeClass('active')
@@ -52,18 +47,19 @@ $(document).ready(function () {
         },
         type: 'GET',
         success: function (json) {
-          // Add the Wiki Cards, each one with their content, to the Wiki Cards Holder inner HTML:
+          // Total Pages Badge Result:
+          document.getElementById('results-container').innerHTML = '<span class="new badge blue" data-badge-caption="articles" id="results">' + json.query.searchinfo.totalhits + '</span>'
+          // Inject the Wiki Cards, each one with their content, in the Wiki Cards Holder inner HTML:
           for (let i = 0; i < json.query.search.length; i++) {
-            document.getElementById('wiki-cards-holder').innerHTML += '<a target="_blank" href="https://en.wikipedia.org/wiki/Hello">' +
+            let pageNameWikiLink = json.query.search[i].title.replace(/\s/g, '_')
+            document.getElementById('wiki-cards-holder').innerHTML += '<a href="" onclick="newPopUp(\'' + pageNameWikiLink + '\'); return false;">' +
                                                                         '<div class="col m12">' +
                                                                           '<article class="card horizontal z-depth-2 hoverable magictime vanishIn">' +
                                                                             '<div class="card-content">' +
                                                                               '<div class="card-title">' +
                                                                                 '<h4 id="wiki-title">' + json.query.search[i].title + '</h4>' +
                                                                               '</div>' +
-                                                                              '<p class="wiki-content">' +
-                                                                                json.query.search[i].snippet +
-                                                                              '</p>' +
+                                                                              '<p class="wiki-content">' + json.query.search[i].snippet + '</p>' +
                                                                             '</div>' +
                                                                           '</article>' +
                                                                         '</div>' +
@@ -86,3 +82,24 @@ $(document).ready(function () {
     }
   })
 })
+
+// Wikipedia Page Pop-Up:
+function newPopUp (pageNameWikiLink) {
+  document.getElementById('iframe-popup').innerHTML = '<article class="magictime swashIn" id="iframe-container">' +
+                                                        '<div class="blue" id="iframe-title">' +
+                                                          '<a href="https://en.wikipedia.org/wiki/' + pageNameWikiLink + '" target="_blank" role="button" class="btn waves-effect waves-light left blue lighten-1">Open External</a>' +
+                                                          '<a href="" onclick="closePopUp(); return false;" class="btn-floating waves-effect waves-circle waves-light red lighten-1 right" role="button"><i class="material-icons">close</i></a>' +
+                                                        '</div>' +
+                                                        '<div id="window-iframe-container">' +
+                                                          '<iframe name="Wikipedia Page" src="https://en.wikipedia.org/wiki/' + pageNameWikiLink + '" frameborder="0" align="middle" sandbox></iframe>' +
+                                                        '</div>' +
+                                                      '</article>'
+}
+
+function closePopUp () {
+  $('#iframe-container').removeClass('swashIn').addClass('swashOut')
+  // Delay of the cleaning of the inner HTML, to give time for the animation to take place:
+  setTimeout(() => {
+    document.getElementById('iframe-popup').innerHTML = ''
+  }, 1000)
+}
