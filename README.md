@@ -17,3 +17,9 @@ https://www.freecodecamp.org/joao-neves95
     . [CodePen.io](https://codepen.io/shivayl/full/POpvzW/)
   
     . [Repository](https://github.com/joao-neves95/freeCodeCamp/tree/master/Weather_App)
+
+3. Wikipedia Viewer Search Engine:
+
+    . [CodePen.io](https://codepen.io/shivayl/full/qVVbdO/)
+  
+    . [Repository](https://github.com/joao-neves95/freeCodeCamp/tree/master/Wikipedia_Viewer_App)
