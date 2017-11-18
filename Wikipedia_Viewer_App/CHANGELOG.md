@@ -2,7 +2,37 @@
 
 &nbsp;
 
-## *v0.1.0 (Nov 18, 2017)
+## *v0.2.0 (Nov 18, 2017)
+
+- ```index.html```:
+
+  . Improved About Page;
+
+  . Added a Random Search button;
+
+  . Added a Wikipedia Logo on the ```header```;
+
+  . Refactored some meta tags.
+- - ```style.css```:
+
+  . Styled the About Page;
+
+  . Styled the Random Search button;
+
+  . Styled the Wikipedia Logo;
+
+  . Linked Font Awesome (my "Find me on the web" icons template uses it).
+- ```main.js```:
+
+  . Added Random Page Search functionality;
+
+  . Improved About Page hide animation;
+
+  . Added comments, and refactored others.
+
+&nbsp;
+
+## v0.1.0 (Nov 18, 2017)
 
 - ```index.html```:
 
