@@ -16,7 +16,7 @@ $(document).ready(function () {
   }
 
   function hideAboutPage () {
-    $('#about-page').hide()
+    $('#about-page').slideUp()
     $('#about-btn-container').removeClass('active')
   }
 
@@ -31,7 +31,7 @@ $(document).ready(function () {
     }
   })
 
-  // On ENTER keypress: Search Input + Wiki API:
+  // On ENTER keypress: Wiki API + Inject the Wiki Cards:
   $('#search-input').on('keypress', function (e) {
     if (e.keyCode === 13) {
       // Clean the Wiki Cards Holder inner HTML:
@@ -51,8 +51,9 @@ $(document).ready(function () {
           document.getElementById('results-container').innerHTML = '<span class="new badge blue" data-badge-caption="articles" id="results">' + json.query.searchinfo.totalhits + '</span>'
           // Inject the Wiki Cards, each one with their content, in the Wiki Cards Holder inner HTML:
           for (let i = 0; i < json.query.search.length; i++) {
+            // Wikipedia uses _ to separate words on links.
             let pageNameWikiLink = json.query.search[i].title.replace(/\s/g, '_')
-            document.getElementById('wiki-cards-holder').innerHTML += '<a href="" onclick="newPopUp(\'' + pageNameWikiLink + '\'); return false;">' +
+            document.getElementById('wiki-cards-holder').innerHTML += '<a href="" onclick="newPopUp(\'' + pageNameWikiLink + '\'); return false;">' + // The function "newPopUp(pageNameWikiLink)" is printed on the wiki card.
                                                                         '<div class="col m12">' +
                                                                           '<article class="card horizontal z-depth-2 hoverable magictime vanishIn">' +
                                                                             '<div class="card-content">' +
@@ -70,7 +71,7 @@ $(document).ready(function () {
     }
   })
 
-  // ABOUT BUTTON:
+  // ABOUT BUTTON (About Page):
   $('#about-btn').click(function () {
     if ($('#about-btn-container').hasClass('active')) {
       hideAboutPage()
@@ -83,9 +84,9 @@ $(document).ready(function () {
   })
 })
 
-// Wikipedia Page Pop-Up:
+// WIKIPEDIA PAGE POP-UP:
 function newPopUp (pageNameWikiLink) {
-  document.getElementById('iframe-popup').innerHTML = '<article class="magictime swashIn" id="iframe-container">' +
+  document.getElementById('iframe-popup').innerHTML = '<article class="magictime swashIn z-depth-3" id="iframe-container">' +
                                                         '<div class="blue" id="iframe-title">' +
                                                           '<a href="https://en.wikipedia.org/wiki/' + pageNameWikiLink + '" target="_blank" role="button" class="btn waves-effect waves-light left blue lighten-1">Open External</a>' +
                                                           '<a href="" onclick="closePopUp(); return false;" class="btn-floating waves-effect waves-circle waves-light red lighten-1 right" role="button"><i class="material-icons">close</i></a>' +
@@ -103,3 +104,4 @@ function closePopUp () {
     document.getElementById('iframe-popup').innerHTML = ''
   }, 1000)
 }
+// End of Wikipedia Page Pop-Up.
