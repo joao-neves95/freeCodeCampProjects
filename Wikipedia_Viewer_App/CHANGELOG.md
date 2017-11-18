@@ -2,7 +2,35 @@
 
 &nbsp;
 
-## *v0.0.2.Alpha (Nov 17, 2017)
+## *v0.1.0 (Nov 18, 2017)
+
+- ```index.html```:
+
+  . Added the Total Pages Badge Result container. Injected with JavaScript;
+
+  . Improved the ```HEADER```;
+
+  . Removed Wikipedia Embedded Content iFrame Pop-Ups. They are now injected with JavaScript;
+
+  . Added comments.
+- ```style.css```:
+
+  . Improved the Wikipedia Embedded Content iFrame Pop-Ups;
+
+  . Styled the Total Pages Badge Result.
+
+  . Added comments.
+- ```main.js```:
+
+  . Added the Wikipedia Embedded Content iFrame Pop-Ups. They are now injected directly on the DOM, constructed for each Wikipedia Card with JavaScript.
+
+  . Added Total Pages Badge Result (Injected on the DOM);
+
+  . Added comments, and removed unnecessary ones.
+
+&nbsp;
+
+## v0.0.2.Alpha (Nov 17, 2017)
 
 - ```index.html```:
 
@@ -11,7 +39,7 @@
   . Added comments.
 - ```style.css```:
 
-  . Styled the Wikipedia Embedded Content iFrame Pop-Up;
+  . Styled the Wikipedia Embedded Content iFrame Pop-Ups;
 
   . Added comments.
 
