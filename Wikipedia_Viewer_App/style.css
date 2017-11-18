@@ -3,9 +3,13 @@
 /* Magic CSS */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css');
 
+.btn-white {
+  color: white !important;
+}
+
 /* About Button */
 ul.about {
-  margin-right: 2em;
+  margin-right: 1em;
 }
 a#about-btn {
   width: 8em;
@@ -13,13 +17,23 @@ a#about-btn {
 }
 /* End of About Button */
 
+/* Main */
 #wiki-cards-holder {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 main a:link {
   color: black;
 }
+
+#results-container {
+  margin-top: 1em;
+}
+
+#results {
+  margin-right: 47.1%;
+}
+/* End of Main */
 
 /* Wikipedia Embedded Content iFrame Pop-Up */
 #iframe-container {
@@ -37,11 +51,26 @@ main a:link {
 }
 
 #iframe-title {
-  background-color: green;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  padding-bottom: 0.9em;
+}
+
+section#iframe-popup a.btn {
+  margin-top: 0.25em;
+  margin-left: 0.25em;
+}
+
+section#iframe-popup a.btn-floating {
+  margin-top: 0.20em;
+  margin-right: 0.25em;
+}
+
+i.material-icons {
+  color: black;
+  margin-right: 0.5em;
 }
 
 iframe {
