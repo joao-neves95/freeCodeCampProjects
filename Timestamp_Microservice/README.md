@@ -15,7 +15,7 @@ Example usage:
 ==============
 https://timestamp-microservice-shivayl.glitch.me
 
-https://timestamp-microservice-shivayl.glitch.me/December%2010,%202018
+https://timestamp-microservice-shivayl.glitch.me/January%2010,%202018
 
 https://timestamp-microservice-shivayl.glitch.me/1515542400
 
