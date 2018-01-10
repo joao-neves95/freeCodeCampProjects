@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const routes = require('./routes/index.js')
 const morgan = require('morgan')
 const app = express()
@@ -7,7 +8,7 @@ app.use(morgan('dev'))
 
 app.use(express.static('public'))
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + '/views/index.html')
+  response.sendFile(path.join(__dirname, '/views/index.html'))
 })
 
 // API:
