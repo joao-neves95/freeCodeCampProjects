@@ -13,9 +13,9 @@ User stories:
 
 Example usage:
 ==============
-https://timestamp-ms.herokuapp.com/December%2010,%202018
+https://timestamp-microservice-shivayl.glitch.me/December%2010,%202018
 
-https://timestamp-ms.herokuapp.com/1515542400
+https://timestamp-microservice-shivayl.glitch.me/1515542400
 
 Example output:
 ==============
