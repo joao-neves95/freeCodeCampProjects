@@ -6,9 +6,11 @@ module.exports = {
     let unixTimestamp
     let naturalDate
     let status
+    let code
 
     if (moment(req.params.date * 1000).isValid() || moment(req.params.date).isValid()) {
       status = 'Success.'
+      code = 200
 
       // Calculate timestamp from natural dates:
       unixTimestamp = Math.floor(new Date(req.params.date.toString()) / 1000)
@@ -23,12 +25,13 @@ module.exports = {
         if (naturalDate === 'Invalid Date' || naturalDate === 'Invalid date')
           naturalDate = moment(req.params.date).format('MMMM DD, YYYY')
     } else {
-      status = 'Error: Please, input a valid unix timestamp or a natural language date (example: January 10, 2018).'
+      status = 'Error: Please, input a valid unix timestamp or a natural language date (example: January 1, 2016).'
+      code = 400
       unixTimestamp = null   
       naturalDate = null
     }
 
-    res.send({
+    res.status(code).send({
       "status": status,
       "input": req.params.date,
       "response": {
