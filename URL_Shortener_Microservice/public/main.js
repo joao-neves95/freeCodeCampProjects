@@ -1,4 +1,5 @@
 $('document').ready(() => {
+  
   const newUrl = () => {
     $.ajax({
       url: 'https://xs-url.glitch.me/shorten/' + document.getElementById('inputUrl').value,
@@ -6,7 +7,6 @@ $('document').ready(() => {
       type: 'GET',
       contentType: 'application/json; charset=UTF-8',
       success: (json) => {
-        console.log(json)
         // Open url modal:
         $('#url-modal').modal({
           keyboard: false,
@@ -15,11 +15,13 @@ $('document').ready(() => {
         })
         // Inject the short link into the modal:
         document.getElementById('modal-url-link').innerHTML = `<a href="${json.shortUrl}" target="_blank">${json.shortUrl}</a>`
+        // Clean the url form input:
+        document.getElementById('inputUrl').value = ''
       },
       error: (jqXHR, textStatus, errorThrown) => {
-        console.log(`jqXHR: ${jqXHR.responseText}`);
-        console.log(`textStatus: ${textStatus}`);
-        console.log(`errorThrown: ${errorThrown}`);
+        // console.log(`jqXHR: ${jqXHR.responseText}`)
+        // console.log(`textStatus: ${textStatus}`)
+        // console.log(`errorThrown: ${errorThrown}`)
         document.getElementById('errors').innerHTML = `<div class="alert alert-danger magictime tinRightIn" role="alert">
                                                          ${JSON.parse(jqXHR.responseText).Error}
                                                        </div>` 
@@ -32,4 +34,5 @@ $('document').ready(() => {
     newUrl()
     return false
   })
+
 })
