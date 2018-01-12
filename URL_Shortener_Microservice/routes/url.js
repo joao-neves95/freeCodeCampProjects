@@ -9,7 +9,7 @@ module.exports = {
       .find( {shortUrl: 'https://xs-url.glitch.me/' + req.params.url} )
       .toArray((err, items) => {
         if (err)
-          throw err
+          res.status(err.status || 500).send({"Error": err.message})
       
         res.redirect(302, items[0].originalUrl)
       })
@@ -40,9 +40,9 @@ module.exports = {
       .insertOne(newUrlDocument,
       (err, results) => {
         if (err)
-          throw err
+          res.status(err.status || 500).send({"Error": err.message})
 
-        res.status('201').send({
+        res.status(201).send({
           "originalUrl": newUrlDocument.originalUrl,
           "shortUrl": newUrlDocument.shortUrl,
           "info": {
@@ -60,7 +60,7 @@ module.exports = {
       .find( {} )
       .toArray((err, items) => {
         if (err)
-          throw err
+          res.status(err.status || 500).send({"Error": err.message})
       
         res.status('200').send(items)
       })
