@@ -14,7 +14,7 @@ $('document').ready(() => {
           focus:true
         })
         // Inject the short link into the modal:
-        document.getElementById('modal-url-link').innerHTML = `<a href="${json.shortUrl} target="_blank">${json.shortUrl}</a>`
+        document.getElementById('modal-url-link').innerHTML = `<a href="${json.shortUrl}" target="_blank">${json.shortUrl}</a>`
       },
       error: (jqXHR, textStatus, errorThrown) => {
         console.log(`jqXHR: ${jqXHR.responseText}`);
