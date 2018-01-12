@@ -39,3 +39,9 @@ https://www.freecodecamp.org/joao-neves95
     . [Glitch.com](https://who-shivayl.glitch.me/)
     
     . [Repository](https://github.com/joao-neves95/freeCodeCamp/tree/master/WhoAmI_Microservice)
+
+3. URL Shortener Microservice (XS-URL):
+
+    . [Glitch.com](https://xs-url.glitch.me/)
+    
+    . [Repository](https://github.com/joao-neves95/freeCodeCamp/tree/master/URL_Shortener_Microservice)
