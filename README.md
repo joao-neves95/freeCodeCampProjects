@@ -46,7 +46,7 @@ https://www.freecodecamp.org/joao-neves95
     
     . [Repository](https://github.com/joao-neves95/freeCodeCamp/tree/master/URL_Shortener_Microservice)
     
-4. Image Search Abstraction Layer (FindImages.com):
+4. *Image Search Abstraction Layer (FindImages.com):
 
     . [Glitch.com](https://findimages.glitch.me/)
     
