@@ -17,40 +17,51 @@ $(document).ready(() => {
   
   // LAST SEARCHES PAGE:
   document.getElementById('btn-last-searches').addEventListener('click', () => {
-    document.getElementById('btn-last-searches').classList.add('active')
-    document.getElementById('last-searches').style.display = ''
     document.getElementById('images').style.display = 'none'
-    document.getElementById('about').style.display = 'none'
-    document.getElementById('btn-about').classList.remove('active')
-    document.getElementById('last-searches').style.display = ''
+    hideAboutPage()
     
     getLastSearches()
+    showLastSearches()
     return false
   }, false)
   
   // ABOUT PAGE:
   document.getElementById('btn-about').addEventListener('click', () => {
-    document.getElementById('btn-last-searches').classList.remove('active')
-    document.getElementById('last-searches').style.display = 'none'
-    document.getElementById('btn-about').classList.add('active')
+    hideLastSearches()
     document.getElementById('images').style.display = 'none'
-    document.getElementById('about').style.display = ''
+
+    showAboutPage()
     return false
   }, false)
 })
 
+// FUNCTIONS:
 const handleSearchImages = () => {
-    document.getElementById('btn-about').classList.remove('active')
-    document.getElementById('about').style.display = 'none'
-    document.getElementById('btn-last-searches').classList.remove('active')
-    document.getElementById('last-searches').style.display = 'none'
+    hideAboutPage()
+    hideLastSearches()
     document.getElementById('images').style.display = ''
-    
     document.getElementById('offset').value = '0'
-
+  
     searchImages()
 }
-                                                        
+
+const hideAboutPage = () => {
+  document.getElementById('btn-about').classList.remove('active')
+  document.getElementById('about').style.display = 'none'
+}
+const showAboutPage = () => {
+  document.getElementById('btn-about').classList.add('active')
+  document.getElementById('about').style.display = ''
+}
+const hideLastSearches = () => {
+  document.getElementById('btn-last-searches').classList.remove('active')
+  document.getElementById('last-searches').style.display = 'none'
+}
+const showLastSearches = () => {
+  document.getElementById('btn-last-searches').classList.add('active')
+  document.getElementById('last-searches').style.display = ''
+}
+
 const searchImages = () => {
   let searchQuery = document.getElementById('search-input').value
   let offset = document.getElementById('offset').value
