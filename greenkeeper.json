@@ -1,0 +1,12 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "Image_Search_Abstraction_Layer/package.json",
+        "Timestamp_Microservice/package.json",
+        "URL_Shortener_Microservice/package.json",
+        "WhoAmI_Microservice/package.json"
+      ]
+    }
+  }
+}
