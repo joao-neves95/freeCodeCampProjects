@@ -7,7 +7,7 @@
     "start": "node-dev server.js"
   },
   "dependencies": {
-    "express": "4.16.2"
+    "express": "4.16.4"
   },
   "devDependencies": {
     "node-dev": "^3.1.3",
