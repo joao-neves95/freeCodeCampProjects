@@ -33,6 +33,8 @@ $(document).ready(function () {
       $('main').show()
       showSearchForm()
     }
+    
+    return false;
   })
 
   // On ENTER keypress: Wiki API + Inject the Wiki Cards:
@@ -73,6 +75,8 @@ $(document).ready(function () {
         }
       })
     }
+    
+    return false;
   })
 
   // ABOUT BUTTON (About Page):
@@ -86,6 +90,8 @@ $(document).ready(function () {
       hideSearchForm()
       showAboutPage()
     }
+    
+    return false;
   })
 })
 
