@@ -24,7 +24,8 @@ $(document).ready(function () {
   }
 
   // SEARCH BUTTON:
-  $('#search-btn').click(function () {
+  $('#search-btn').click(function (e) {
+    e.preventDefault();
     if ($('#search-btn-container').hasClass('active')) {
       hideSearchForm()
     } else {
@@ -75,7 +76,8 @@ $(document).ready(function () {
   })
 
   // ABOUT BUTTON (About Page):
-  $('#about-btn').click(function () {
+  $('#about-btn').click(function (e) {
+    e.preventDefault();
     if ($('#about-btn-container').hasClass('active')) {
       hideAboutPage()
       $('main').show()
