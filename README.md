@@ -1,5 +1,7 @@
 # Free Code Camp Projects Repository
 
+## THIS PROJECT HAS BEEN MOVED TO [Exercises_Challenges_Courses](https://github.com/joao-neves95/Exercises_Challenges_Courses)
+
 These are my projects from the freeCodeCamp online web development course.
 
 https://www.freecodecamp.org/joao-neves95
